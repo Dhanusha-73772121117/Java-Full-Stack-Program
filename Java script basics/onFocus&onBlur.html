@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Calculator</title>
+    <script>
+        function factorial() {
+            let fact=1;
+            let n=parseInt(document.getElementById("n").value);
+            for(let i=1;i<=n;i++){
+                fact=fact*i;
+            }
+            document.getElementById("ResultDiv").innerHTML ="<b>Factorial:"+fact;
+        }
+        </script>
+</head>
+<body>
+    Enetr the Number<input type="text" id="n" value="Enetr positive Number"
+    onfocus="this.value=''" onblur="factorial()"/>
+    <br>
+    <br>
+    <button onclick="factorial()">Factorial</button>
+    <br><br>
+    <div id="ResultDiv">
+        
+    </div>
+</body>
+</html>
