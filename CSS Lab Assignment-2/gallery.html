@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>gallery</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .main{
+            background-color: rgb(205, 231, 231);
+            height: 550px;
+            width: 900px;
+        }
+        .con1{
+            border: 2px solid red;
+            background-color: black;
+            color: white;
+            height: 40px;
+            width: 850px;
+            margin-top: 15px;
+            margin-left: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin-left:20px;
+            padding-top:20px;
+        }
+        .con2{
+            border: 2px solid black;
+            height: 390px;
+            width: 800px;
+            margin-left: 45px;
+            border-bottom:0px;
+            border-top: 5px solid black;
+        }
+        .one{
+            height: 170px;
+            width: 170px;
+            border: 8px solid rgb(205, 231, 231);
+            padding-top: 10px;
+            border-radius: 10px;   
+        }
+        table{
+            margin-left: 20px;
+        }
+        img{
+            height: 170px;
+            width: 170px;
+            border-radius: 10px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        .one:hover{
+            transform: scale(1.2);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="con1">
+            <div>Photo Gallery</div></div>
+            <br><br>
+            <div class="con2">
+            <table>
+            <tr>
+                <td class=one><img src="img1.jpg"></td>
+                <td class=one><img src="img2.jpg"></td>
+                <td class=one><img src="img3.jpg"></td>
+                <td class=one><img src="img4.jpg"></td>
+            </tr>
+            <tr>
+                <td class=one><img src="img5.jpg"></td>
+                <td class=one><img src="img6.jpg"></td>
+                <td class=one><img src="img7.jpg"></td>
+                <td class=one><img src="img8.jpg"></td>
+            </tr>
+
+
+        </table>
+        </div></div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background: url('img7.jpg') no-repeat center center fixed;
+            background-size: cover;
+            align-items: center;
+            overflow: hidden;
+        }
+        .main {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            width: 300px;
+            height: 450px;
+        }
+        .main img {
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .main h2 {
+            margin-top: 20px;
+        }
+        .main input[type="text"],
+        .main  input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px ;
+            border: none;
+            border-bottom: 2px solid white;
+            background: transparent;
+            color: white;
+            font-size:90%;
+            margin-left: 0px;
+        }
+        .main input[type="checkbox"] {
+            margin: 20px;
+        }
+        .main button:hover {
+            background: #45a049;
+        }
+        .main a {
+            color: #4CAF50;
+        }
+        .main button {
+            background: #4CAF50;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="avatar.jpeg">
+        <h2>LOGIN WINDOW</h2>
+        <input type="text" placeholder="Your Email Address" required>
+        <input type="password" placeholder="Your Password" required>
+        <div>
+            <input type="checkbox" id="con">
+            <label for="con">Agree With <a href="#">Terms & Conditions</a></label>
+        </div>
+        <button type="submit">Login</button>
+    </div>
+</body>
+</html>
