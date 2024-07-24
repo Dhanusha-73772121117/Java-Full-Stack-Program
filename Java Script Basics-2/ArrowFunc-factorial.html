@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Factorial</title>
+   
+</head>
+<body>
+    Enter the number<input type="number" id="n"/>
+    <br>
+    <br>
+    <button onclick="factorial()">Factorial</button>
+    <br><br>
+    <div id="ResultDiv">
+    </div>  
+    <script>
+        const factorial=()=>{
+            let fact=1;
+            let n=parseInt(document.getElementById("n").value);
+            for(let i=1;i<=n;i++){
+                fact=fact*i;
+            }
+                document.getElementById("ResultDiv").innerHTML ="<b>Factorial:</b>"+fact;
+                }
+            </script>
+</body>
+</html>
