@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime number</title>
+    <script>
+        function primeNumber(){
+            let Prime=true;
+            let n=parseInt(document.getElementById("n").value);
+            for(let i=2;i<=n/2;i++){
+                if(n%i==0 || n<2){
+                    Prime=false;
+                }
+            }
+                     if(Prime){
+                    document.getElementById("ResultDiv").innerHTML="<b><font color='purple'>It is a prime number!!!</font></b>";
+                }
+                else{
+                    document.getElementById("ResultDiv").innerHTML="<b><font color='purple'>It is not a prime number!!!</font></b>";
+                }
+            }
+            
+    </script>
+</head>
+<body>
+    Enter the Number<input type="number" id="n" value="Enter Positive number"/>
+    <br>
+    <br> <button onclick="primeNumber()">Check</button>
+    <br><br>
+    <div id="ResultDiv">
+        
+    </div>   
+</body>
+</html>

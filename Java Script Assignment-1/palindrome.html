@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome</title>
+    <script>
+        function palindrome(){
+            let s=(document.getElementById("p").value);
+            let r=s.split('').reverse().join('');
+        if(s==r){
+            document.getElementById("ResultDiv").innerHTML="<b><font color='purple'>It is a palindrome!!!</font></b>";
+        }
+        else{
+            document.getElementById("ResultDiv").innerHTML="<b><font color='purple'>It is not a palindrome!!!</font></b>";
+        }
+    }
+    </script>
+</head>
+<body>
+    Enter the String<input type="text" id="p"/>
+    <br>
+    <br> <button onclick="palindrome()">Check</button>
+    <br><br>
+    <div id="ResultDiv">
+        
+    </div> 
+    
+</body>
+</html>

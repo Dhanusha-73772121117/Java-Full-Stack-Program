@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pattern</title>
+    <script>
+        function pattern(){
+            let result="";
+            let n=parseInt(document.getElementById("n").value);
+            for(let i=0;i<=n;i++){
+                for(let j=0;j<=i;j++){
+                    result+=("* ");
+                }
+                result+="<br>";
+            }
+                document.getElementById("ResultDiv").innerHTML="<font color='purple'><b>"+result+"</b></font>";
+            }
+    </script>
+</head>
+<body>
+    Enter the Number<input type="number" id="n" value="Enter Positive number"/>
+    <br>
+    <br> <button onclick="pattern()">Print Pattern</button>
+    <br><br>
+    <div id="ResultDiv">
+        
+    </div> 
+    
+</body>
+</html>

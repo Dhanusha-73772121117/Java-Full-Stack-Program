@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Functions</title>
+    <script>
+        function StringFunctions() {
+            let s = document.getElementById("s").value;
+            let display = '<p>Original String:'+ s+'</p>';
+            display += '<p>String Length:'+s.length+'</p>';
+            display += '<p>Char at index 6:'+s.charAt(6)+'</p>';
+            display += '<p>Slice (2, 6): ' + s.slice(2, 6) + '</p>';
+            display += '<p>Substring (3, 7): ' + s.substring(3, 7) + '</p>';
+            display += '<p>Substr (2, 5): ' + s.substr(2, 5) + '</p>';
+            display += '<p>Upper Case: ' + s.toUpperCase() + '</p>';
+            display += '<p>Lower Case: ' + s.toLowerCase() + '</p>';
+            display += '<p>Concat with "Alagappan": ' + s.concat('Alagappan') + '</p>';
+            display += '<p>Trimmed:' + s.trim() + '</p>';
+            display += '<p>Trim Start: ' + s.trimStart() + '</p>';
+            display += '<p>Trim End: ' + s.trimEnd() + '</p>';
+            display += '<p>Repeat 5 times: ' + s.repeat(5) + '</p>';
+            display += '<p>Replace "h" with "a": ' + s.replace('h', 'a') + '</p>';
+            display += '<p>Replace All "a" with "h": ' + s.replaceAll('a', 'h') + '</p>';
+            display += '<p>Split by "a": ' + s.split('a') + '</p>';
+            document.getElementById("ResultDiv").innerHTML = display;
+        }
+    </script>
+</head>
+<body>
+    Enter a String: <input type="text" id="s" onfocus="this.value=''" onblur="StringFunctions()"/>
+    <br><br>
+    <button onclick="StringFunctions()">String Functions</button>
+    <br><br>
+    <div id="ResultDiv"></div>
+</body>
+</html>
