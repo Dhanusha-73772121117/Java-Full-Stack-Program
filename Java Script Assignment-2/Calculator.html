@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            .Main{
+                border:10px solid lightslategray;
+                height:450px;
+                width: 296px;
+                background-color:lightslategray;
+                border-radius: 3px;
+              
+            }
+            .con1{
+                border: 5px solid antiquewhite;
+                width: 280;
+                height: 40px;
+                margin-left: 3px;;
+                margin-top: 10px;
+                font-size:xx-large;
+                background-color: antiquewhite;
+                box-shadow:10px;
+                border-radius: 3px;
+            }
+            button{
+                height: 70px;
+                width: 70px;
+                font-size: x-large;
+                background-color: teal;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="Main">
+                <div class="con1" id="dis">0</div>
+                <br>
+                <table>
+                <div class="tab">
+                    <tr>
+                        <td><button onclick="clr()">C</button></td>
+                        <td><button onclick="add('%')">%</button></td>
+                        <td><button onclick="back()">&larr;</button></td>
+                        <td><button onclick="add('/')">/</button></td>  
+                    </tr>
+                    <tr>
+                        <td><button onclick="add('7')">7</button></td>
+                        <td><button onclick="add('8')">8</button></td>
+                        <td><button onclick="add('9')">9</button></td>
+                        <td><button onclick="add('*')">*</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button onclick="add('4')">4</button></td>
+                        <td><button onclick="add('5')">5</button></td>
+                        <td><button onclick="add('6')">6</button></td>
+                        <td><button onclick="add('-')">-</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button onclick="add('1')">1</button></td>
+                        <td><button onclick="add('2')">2</button></td>
+                        <td><button onclick="add('3')">3</button></td>
+                        <td><button onclick="add('+')">+</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button onclick="add('00')">00</button></td>
+                        <td><button onclick="add('0')">0</button></td>
+                        <td><button onclick="add('.')">.</button></td>
+                        <td><button onclick="calc('=')">=</button></td>
+                        
+                    </tr></div>
+                </table>  
+            </div>
+        </div>
+        <script>
+            let values=document.getElementById('dis');
+            let input='';
+    
+            function clr() {
+                input='';
+                values.textContent='0';
+            }   
+            function add(value){
+                if(input=='0'&&value!=='.'){
+                    input=value;
+                } else{
+                    input+=value;
+                }
+                values.textContent=input;
+            }    
+            function back(){
+                input=input.slice(0,-1);
+                values.textContent=input || '0';
+            }    
+            function calc(){
+                try {
+                    input=eval(input).toString();
+                    values.textContent=input;
+                } catch (error){
+                    values.textContent='Error';
+                    input='';
+                }
+            }
+        </script>
+    </body>
+</html>
