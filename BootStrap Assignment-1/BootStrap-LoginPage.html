@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <style>
+        .main {
+            border: 2px solid rgb(151, 203, 224);
+            width: 30%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: whitesmoke;
+        }
+        .container1 {
+            
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            background-color: #d9edf7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .email, .password {
+            width: 100%;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        .btn-custom, .btn-facebook {
+            width: 48%;
+            height: 38px;
+            border: none;
+            color: white;
+        }
+        .btn-custom {
+            background-color: #5cb85c;
+        }
+        .btn-facebook {
+            background-color: #337ab7;
+        }
+        .remember-me {
+            margin-bottom: 20px;
+        }
+        .signup {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        hr{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container1">
+            <h4 class="text-center">Sign In</h4>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control email" placeholder="Username or email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control password" placeholder="Password">
+            </div>
+            <div class="checkbox remember-me">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-custom">Login</button>
+                <button type="button" class="btn btn-facebook">Login with Facebook</button>
+            </div>
+            <hr>
+            <div class="form-group text-center">
+                <span>Don't have an account? <a href="#" class="signup">Sign Up Here</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
