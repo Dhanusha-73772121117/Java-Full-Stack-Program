@@ -1,0 +1,122 @@
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+}
+.head1 {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C6003D;
+}
+.right {
+    height: 40px;
+    width: 50%;
+    align-items: center;
+    margin-left: 20px;
+    padding-top: 10px;
+    color: white;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+}
+.imp, .help, .sell, .down, .donate {
+    height: 30px;
+    width: 130px;
+    color: white;
+    padding: 3px;
+}
+.head2 {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E40046;
+}
+.logo {
+    height: 40px;
+    width: 200px;
+    margin-left: 60px;
+    font-size: x-large;
+    color: white;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    justify-content: space-between;
+    width: 200px;
+    height: 30px;
+}
+.cart, .sign {
+    padding-right: 40px;
+    color: white;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 785px;
+    margin-left: 80px;
+    padding: 1%;
+    font-size: small;
+    font-style: calibri;
+    background-color: white;
+}
+.body {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.body2 {
+    display: flex;
+    flex-direction: column;
+}
+.con1 {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    padding: 5px;
+    
+    justify-content: space-between;
+}
+.sub1 {
+    display: flex;
+    width: 850px;
+    height: 400px;
+    
+}
+.sub2{
+    height: 400px;
+    width: 200px;
+}
+.con2{
+    display:flex;
+    width: 1090px;
+    height: 400px;
+    margin-left: 5px;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+.pic1,.pic2,.pic3,.pic4{
+    border: 2px solid beige;
+    width: 260px;
+    height: 370px;
+    background-color:darkslategrey;
+    box-shadow: 10px;
+}
+.search-button{
+    color: white;
+}
